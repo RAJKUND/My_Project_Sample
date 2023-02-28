@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f0ebf4;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  border: 0px;
+  border-style: solid;
+  width: 60vh;
+  height: 68vh;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(25%);
+}
+
+.title {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.wrapper form .field {
+  position: relative;
+  height: 65px;
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px;
+  border-color: #adadad;
+  border-style: solid;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  padding: 18px;
+}
+
+.wrapper form .field input:focus {
+  border-color: rgba(56, 56, 56, 0.87);
+  transform: scale(0.98);
+}
+
+.wrapper form .field label {
+  position: absolute;
+  top: 35%;
+  left: 25px;
+  font-size: 14px;
+  pointer-events: none;
+  color: #adadad;
+}
+
+/*input transformation*/
+.wrapper form .field input:focus~label,
+.wrapper form .field input:valid~label {
+  top: 0%;
+  transform: translateY(-29%);
+  font-size: 12px;
+  color: rgba(93, 169, 255, 0.836);
+  transition: all 0.3s ease;
+}
+
+/*Pass-Link*/
+.message p {
+  color: #d33333;
+  font-size: 14px;
+  margin-left: 75px;
+  margin-top: 5px;
+}
+
+.pass-link a {
+  color: rgba(36, 35, 35, 0.904);
+  margin-left: 75px;
+  text-decoration: none;
+  font-size: 14px
+}
+
+.pass-link a:hover {
+  color: rgb(255, 153, 36);
+  font-size: 13.8px;
+}
+
+/*Button*/
+.wrapper form .button {
+  position: relative;
+  height: 65px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper form .button input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #414fb7;
+  border-radius: 25px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  background: #414fb7;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.wrapper form .button input:hover {
+  background: #2e3237;
+  transform: scale(0.98)
+}
+
+.wrapper form .button input:active {
+  transform: scale(0.98);
+  background: #2e3237;
+}
+
+/*OR*/
+
+.Or p {
+  text-align: center;
+  margin-top: 5px;
+  color: #837e7e;
+}
+
+.R_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.R_icon a {
+  margin-top: 5px;
+  padding: 4px;
+}
+
+.img2 {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.img3 {
+  width: 34px;
+  height: 34px
+}
+
+.R_icon a:hover {
+  transform: scale(0.95);
+
+}
